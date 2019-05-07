@@ -1,0 +1,26 @@
+button {
+  margin: 10px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button.success {
+  background: green;
+}
+
+button.danger {
+  background: red;
+}
+
+button.info {
+  background: dodgerblue;
+}
+
+button.warning {
+  background: darkorange;
+}
