@@ -1,8 +1,8 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NgAlertComponent } from "./ng-alert.component";
+import { NgAlertComponent } from './ng-alert.component';
 
-describe("NgAlertComponent", () => {
+describe('NgAlertComponent', () => {
   let component: NgAlertComponent;
   let fixture: ComponentFixture<NgAlertComponent>;
 
@@ -18,7 +18,7 @@ describe("NgAlertComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
