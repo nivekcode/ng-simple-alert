@@ -3,7 +3,14 @@ import {NgAlertService} from '../../../ng-alert/src/lib/ng-alert.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: `
+    <ng-alert></ng-alert>
+
+    <button class="success" (click)="createSuccessMessage()">Create success alert</button>
+    <button class="danger" (click)="createDangerMessage()">Create danger alert</button>
+    <button class="warning" (click)="createWarningMessage()">Create warning alert</button>
+    <button class="info" (click)="createInfoMessage()">Create info alert</button>
+  `,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
