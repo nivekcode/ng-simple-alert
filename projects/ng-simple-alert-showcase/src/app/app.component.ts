@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { NgAlertService } from '../../../ng-alert/src/lib/ng-alert.service';
+import { NgSimpleAlertService } from '../../../ng-simple-alert/src/lib/ng-simple-alert.service';
 
 @Component({
   selector: 'app-root',
   template: `
-    <ng-alert></ng-alert>
+    <ng-simple-alert></ng-simple-alert>
 
     <button class="success" (click)="createSuccessMessage()">
       Create success alert
@@ -22,7 +22,7 @@ import { NgAlertService } from '../../../ng-alert/src/lib/ng-alert.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private alertService: NgAlertService) {}
+  constructor(private alertService: NgSimpleAlertService) {}
 
   public createSuccessMessage(): void {
     this.alertService.createSuccessAlert('Sample success message');

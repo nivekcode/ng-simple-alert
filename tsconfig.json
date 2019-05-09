@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "ng-alert": [
-        "dist/ng-alert"
+      "ng-simple-alert": [
+        "dist/ng-simple-alert"
       ],
-      "ng-alert/*": [
-        "dist/ng-alert/*"
+      "ng-simpl-alert/*": [
+        "dist/ng-simple-alert/*"
       ]
     }
   }

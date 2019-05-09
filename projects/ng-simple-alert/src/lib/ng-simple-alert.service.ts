@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 
-export interface AlertMessage {
+export interface SimpleAlertMessage {
   prefix: string;
   message: string;
   color: string;
@@ -10,8 +10,8 @@ export interface AlertMessage {
 @Injectable({
   providedIn: 'root'
 })
-export class NgAlertService {
-  public alertMessage$ = new Subject<AlertMessage>();
+export class NgSimpleAlertService {
+  public alertMessage$ = new Subject<SimpleAlertMessage>();
 
   public createSuccessAlert(message: string): void {
     this.alertMessage$.next(this.createAlertMessage('Success', message, 'green'));
@@ -29,7 +29,7 @@ export class NgAlertService {
     this.alertMessage$.next(this.createAlertMessage('Info', message, 'dodgerblue'));
   }
 
-  private createAlertMessage(prefix: string, message: string, color: string): AlertMessage {
+  private createAlertMessage(prefix: string, message: string, color: string): SimpleAlertMessage {
     return { prefix, message, color };
   }
 }

@@ -1,20 +1,20 @@
 {
-  "name": "ng-alert",
+  "name": "ng-simple-alert",
   "version": "0.0.0-development",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "copy:readme": "copyfiles ./README.md ./projects/ng-alert",
+    "copy:readme": "copyfiles ./README.md ./projects/ng-simple-alert",
     "build": "npm run build:lib && npm run build:demo",
-    "build:lib": "npm run copy:readme && ng build ng-alert",
-    "build:demo": "ng build ng-alert-showcase --base-href='https://kreuzerk.github.io/ng-alert/'",
+    "build:lib": "npm run copy:readme && ng build ng-simple-alert",
+    "build:demo": "ng build ng-simple-alert-showcase --base-href='https://kreuzerk.github.io/ng-simple-alert/'",
     "format:check": "prettier --list-different 'projects/**/*.ts'",
     "format:write": "prettier --write 'projects/**/*.ts'",
     "test": "ng test",
-    "test:lib": "ng test ng-alert",
-    "test:lib-coverage": "ng test ng-alert --code-coverage --watch=false",
-    "report-coverage:lib": "cat ./coverage/ng-alert/lcov.info | codecov",
-    "publish:demo": "npx angular-cli-ghpages --dir=./dist/ng-alert-showcase",
+    "test:lib": "ng test ng-simple-alert",
+    "test:lib-coverage": "ng test ng-simple-alert --code-coverage --watch=false",
+    "report-coverage:lib": "cat ./coverage/ng-simple-alert/lcov.info | codecov",
+    "publish:demo": "npx angular-cli-ghpages --dir=./dist/ng-simple-alert-showcase",
     "publish:lib": "npx semantic-release",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -87,10 +87,10 @@
     ]
   },
   "release": {
-    "pkgRoot": "dist/ng-alert"
+    "pkgRoot": "dist/ng-simple-alert"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kreuzerk/ng-alert.git"
+    "url": "https://github.com/kreuzerk/ng-simple-alert.git"
   }
 }

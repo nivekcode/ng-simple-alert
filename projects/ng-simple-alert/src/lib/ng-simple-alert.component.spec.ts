@@ -1,19 +1,18 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { NgAlertComponent } from './ng-alert.component';
+import { NgSimpleAlertComponent } from './ng-simple-alert.component';
 
 describe('NgAlertComponent', () => {
-  let component: NgAlertComponent;
-  let fixture: ComponentFixture<NgAlertComponent>;
+  let component: NgSimpleAlertComponent;
+  let fixture: ComponentFixture<NgSimpleAlertComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [NgAlertComponent]
+      declarations: [NgSimpleAlertComponent]
     }).compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NgAlertComponent);
+    fixture = TestBed.createComponent(NgSimpleAlertComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

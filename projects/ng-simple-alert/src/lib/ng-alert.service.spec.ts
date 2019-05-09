@@ -1,12 +1,12 @@
-import { NgAlertService } from './ng-alert.service';
 import { TestScheduler } from 'rxjs/testing';
+import { NgSimpleAlertService } from './ng-simple-alert.service';
 
 describe('NgAlertService', () => {
-  let sut: NgAlertService;
+  let sut: NgSimpleAlertService;
   let scheduler: TestScheduler;
 
   beforeEach(() => {
-    sut = new NgAlertService();
+    sut = new NgSimpleAlertService();
     scheduler = new TestScheduler((actual, expected) => {
       expect(actual).toEqual(expected);
     });

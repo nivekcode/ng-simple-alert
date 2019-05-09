@@ -33,7 +33,7 @@ jobs:
       provider: pages
       skip_cleanup: true
       github_token: $GH_TOKEN
-      local_dir: dist/ng-alert-showcase
+      local_dir: dist/ng-simple-alert-showcase
     if: branch = master
   - stage: build & publish lib
     script:
