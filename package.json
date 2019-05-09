@@ -6,7 +6,7 @@
     "start": "ng serve",
     "copy:readme": "copyfiles ./README.md ./projects/ng-alert",
     "build": "npm run build:lib && npm run build:demo",
-    "build:lib": "npm run copy:readme && ng build ng-sortgrid",
+    "build:lib": "npm run copy:readme && ng build ng-alert",
     "build:demo": "ng build ng-alert-showcase --base-href='https://kreuzerk.github.io/ng-alert/'",
     "format:check": "prettier --list-different 'projects/**/*.ts'",
     "format:write": "prettier --write 'projects/**/*.ts'",
