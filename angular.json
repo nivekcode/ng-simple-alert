@@ -137,34 +137,6 @@
           }
         }
       }
-    },
-    "ng-simple-alert-showcase-e2e": {
-      "root": "projects/ng-simple-alert-showcase-e2e/",
-      "projectType": "application",
-      "prefix": "",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "projects/ng-simple-alert-showcase-e2e/protractor.conf.js",
-            "devServerTarget": "ng-simple-alert-showcase:serve"
-          },
-          "configurations": {
-            "production": {
-              "devServerTarget": "ng-simple-alert-showcase:serve:production"
-            }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "projects/ng-simple-alert-showcase-e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
     }
   },
   "defaultProject": "ng-simple-alert"
