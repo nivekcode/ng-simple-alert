@@ -1,17 +1,23 @@
 {
   "name": "ng-alert",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npm run build:lib && npm run build:demo",
+    "build:lib": "npm run copy:readme && ng build ng-sortgrid",
+    "build:demo": "ng build ng-alert-showcase --base-href='https://kreuzerk.github.io/ng-alert/'",
     "format:check": "prettier --list-different 'projects/**/*.ts'",
     "format:write": "prettier --write 'projects/**/*.ts'",
     "test": "ng test",
     "test:lib": "ng test ng-alert",
     "test:lib-coverage": "ng test ng-alert --code-coverage --watch=false",
+    "report-coverage:lib": "cat ./coverage/ng-alert/lcov.info | codecov",
+    "publish:demo": "npx angular-cli-ghpages --dir=./dist/ng-sortgrid-demo",
+    "publish:lib": "cd dist/ng-sortgrid && npx semantic-release",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "semantic-release": "semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -40,6 +46,7 @@
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
+    "codecov": "^3.4.0",
     "codelyzer": "~4.5.0",
     "husky": "^2.2.0",
     "jasmine-core": "~2.99.1",
@@ -53,6 +60,7 @@
     "ng-packagr": "^4.2.0",
     "prettier": "^1.17.0",
     "protractor": "~5.4.0",
+    "semantic-release": "^15.13.12",
     "ts-node": "~7.0.0",
     "tsickle": ">=0.34.0",
     "tslib": "^1.9.0",
@@ -75,5 +83,9 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kreuzerk/ng-alert.git"
   }
 }
