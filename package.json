@@ -13,8 +13,8 @@
     "test:lib": "ng test ng-alert",
     "test:lib-coverage": "ng test ng-alert --code-coverage --watch=false",
     "report-coverage:lib": "cat ./coverage/ng-alert/lcov.info | codecov",
-    "publish:demo": "npx angular-cli-ghpages --dir=./dist/ng-sortgrid-demo",
-    "publish:lib": "cd dist/ng-sortgrid && npx semantic-release",
+    "publish:demo": "npx angular-cli-ghpages --dir=./dist/ng-alert-showcase",
+    "publish:lib": "npx semantic-release",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "semantic-release": "semantic-release"
@@ -83,6 +83,9 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "release": {
+    "pkgRoot": "dist/ng-alert"
   },
   "repository": {
     "type": "git",
