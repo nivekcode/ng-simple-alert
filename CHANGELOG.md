@@ -1,1 +1,6 @@
+## [1.0.3](https://github.com/kreuzerk/ng-simple-alert/compare/v1.0.2...v1.0.3) (2019-05-11)
 
+
+### Bug Fixes
+
+* **test:** adjust releaserc ([b218d67](https://github.com/kreuzerk/ng-simple-alert/commit/b218d67))
