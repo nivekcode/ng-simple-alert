@@ -1,6 +1,6 @@
 {
   "name": "ng-simple-alert",
-  "version": "0.0.0-development",
+  "version": "1.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
