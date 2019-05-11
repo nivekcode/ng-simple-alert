@@ -88,9 +88,6 @@
       "@commitlint/config-conventional"
     ]
   },
-  "release": {
-    "pkgRoot": "dist/ng-simple-alert"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/kreuzerk/ng-simple-alert.git"
