@@ -3,4 +3,4 @@
 
 ### Bug Fixes
 
-* **test:** adjust releaserc ([b218d67](https://github.com/kreuzerk/ng-simple-alert/commit/b218d67))
+* **test:** adjust releaserc ([b218d67](https://github.com/kreuzerk/ng-simple-alert/commit/b218d67)) 
