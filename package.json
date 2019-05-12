@@ -10,7 +10,7 @@
     "build:demo": "ng build ng-simple-alert-showcase --base-href='https://kreuzerk.github.io/ng-simple-alert/'",
     "format:check": "prettier --list-different 'projects/**/*.ts'",
     "format:write": "prettier --write 'projects/**/*.ts'",
-    "format:package-json": "npm-run-all format-package:*",
+    "format-package-json": "npm-run-all format-package-json:*",
     "format-package-json:lib": "prettier --write 'projects/ng-simple-alert/package.json'",
     "format-package-json:main": "prettier --write 'package.json'",
     "test": "ng test",
