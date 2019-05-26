@@ -6,7 +6,7 @@
     "@semantic-release/changelog",
     "@semantic-release/npm",
     ["@semantic-release/exec", {
-      "prepareCmd": "VERSION=${nextRelease.version} npm run adjust-version && npm run format-package-json"
+      "prepareCmd": "VERSION=${nextRelease.version} npm run adjust-version"
     }],
     ["@semantic-release/git", {
       "assets": ["package.json", "projects/ng-simple-alert/package.json", "CHANGELOG.md"],
