@@ -73,7 +73,7 @@
     "prettier": "^1.17.0",
     "protractor": "~5.4.0",
     "replace-json-property": "^1.4.0",
-    "semantic-release": "^15.13.12",
+    "semantic-release": "^17.2.3",
     "ts-node": "~7.0.0",
     "tsickle": ">=0.34.0",
     "tslib": "^1.9.0",
